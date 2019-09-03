@@ -1,7 +1,7 @@
 # wordpress-terraform-deployment
-<a href="https://saythanks.io/to/akhan4u">
-        <img  src="https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg" alt="Thanks" align="middle" />
-</a>
+[![MIT License](http://img.shields.io/badge/license-Apache-blue.svg?style=flat)](LICENSE)
+[![Say Thanks](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/akhan4u)
+
 Deploys WordPress on EC2 instance with RDS server.
 
 ## Pre-Requisites
