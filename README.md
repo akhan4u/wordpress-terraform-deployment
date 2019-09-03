@@ -32,3 +32,8 @@ Following resources are created :
 4. Run `terraform init`.
 5. Run `terraform apply`.
 6. When you're done, run `terraform destroy`.
+
+
+After Complete Run it will Output the PublicIP of your WordPress EC2 Instance. Enter http://<ec2-public-ip> to get the default WordPress login page.
+
+![WordPress Welcome Page](screenshots/wordpress_login_page.png)
