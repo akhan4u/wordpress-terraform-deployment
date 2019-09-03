@@ -201,7 +201,7 @@ resource "null_resource" "wordpress_deployment" {
       "sudo sudo add-apt-repository 'deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable'",
       "sudo apt update",
       "sudo apt install docker-ce -y",
-      "sudo docker run -e WORDPRESS_DB_HOST=${aws_db_instance.default.endpoint} -e WORDPRESS_DB_NAME=${var.rds_database_name} -e WORDPRESS_DB_USER=${var.rds_database_user} -e WORDPRESS_DB_PASSWORD=${var.rds_database_pass} --name wordpress -p 80:80 -d wordpress",
+      "sudo docker run -e WORDPRESS_DB_HOST=${aws_db_instance.default.endpoint} -e WORDPRESS_DB_NAME=${var.rds_database_name} -e WORDPRESS_DB_USER=${var.rds_database_user} -e WORDPRESS_DB_PASSWORD=${var.rds_database_pass} -v /wordpress-data:/var/www/html --name wordpress -p 80:80 -d wordpress",
     ]
   }
 }
