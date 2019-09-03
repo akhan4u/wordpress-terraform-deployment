@@ -42,4 +42,4 @@ After Complete Run it will Output the PublicIP of your WordPress EC2 Instance. E
 
 ## Disclaimer!!
 
-This example deploy real resources into your AWS account which can cost you money. The resources are all part of the AWS Free Tier Account, you are completely responsible for all AWS charges.
+This example deploy real resources into your AWS account which can cost you money. The resources are all part of the <b>AWS Free Tier Account</b>, you are completely responsible for all AWS charges.
