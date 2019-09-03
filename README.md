@@ -3,7 +3,7 @@ Deploys WordPress on EC2 instance with RDS server.
 
 ## Pre-Requisites
 
-Install [Terraform](https://www.terraform.io/) and make sure it's on your `PATH`
+Install [Terraform](https://www.terraform.io/) and make sure it's on your `PATH`, however the current script was created on below terraform version:
 
 ```
 Terraform v0.11.13
@@ -34,6 +34,12 @@ Following resources are created :
 6. When you're done, run `terraform destroy`.
 
 
-After Complete Run it will Output the PublicIP of your WordPress EC2 Instance. Enter http://<ec2-public-ip> to get the default WordPress login page.
+After Complete Run it will Output the PublicIP of your WordPress EC2 Instance. Enter http://<i>ec2-public-ip</i> to get the default WordPress login page.
 
 ![WordPress Welcome Page](screenshots/wordpress_login_page.png)
+
+
+
+## Disclaimer!!
+
+This example deploy real resources into your AWS account which can cost you money. The resources are all part of the AWS Free Tier Account, you are completely responsible for all AWS charges.
