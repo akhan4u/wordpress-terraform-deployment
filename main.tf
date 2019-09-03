@@ -142,7 +142,7 @@ resource "aws_db_instance" "default" {
 
 // Add ssh public key to aws
 resource "aws_key_pair" "wp-key" {
-  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDheySbPaCWcKF4d3uC6tuvAuheZuQKn71Lac7xI5iJW6NAu2Lfipvx/eME7/Mf5xoiYTWpYsYEV2sUiDokolqrFI1VwbFacW4hV9IVz0lW40spaAYylDoGUBEZu/pelA0842lWau9OQwRk+gN7gyAfAUi2lBmmBMhH4UzweLxopZ2YdbH96e17Q8h5/4e7W+2tb4A+Bm/wrB3mI2uUv8GG0rUYTIcg4Cm7TkuUm1hAI9RLtg2k62+AOfe2CBMtZcOWh7MQG2xbovAK8T8WU09VlOMg1WNjGsbpGLpYstGgqwQZ9L817+PWebjan82aQqdiaCSZ5hRKCOiFNn7XF0Xd amaan-khan"
+  public_key = "${var.wordpress_ssh_key_pub}"
   key_name   = "wp-ec2-key"
 }
 
