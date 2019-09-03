@@ -36,6 +36,6 @@ variable "ssh_user" {
 // SSH Public Key for accessing wordpress EC2 instance
 variable "wordpress_ssh_key_pub" {
   description = "Public key for ec2 access."
-  default     = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDheySbPaCWcKF4d3uC6tuvAuheZuQKn71Lac7xI5iJW6NAu2Lfipvx/eME7/Mf5xoiYTWpYsYEV2sUiDokolqrFI1VwbFacW4hV9IVz0lW40spaAYylDoGUBEZu/pelA0842lWau9OQwRk+gN7gyAfAUi2lBmmBMhH4UzweLxopZ2YdbH96e17Q8h5/4e7W+2tb4A+Bm/wrB3mI2uUv8GG0rUYTIcg4Cm7TkuUm1hAI9RLtg2k62+AOfe2CBMtZcOWh7MQG2xbovAK8T8WU09VlOMg1WNjGsbpGLpYstGgqwQZ9L817+PWebjan82aQqdiaCSZ5hRKCOiFNn7XF0Xd wordpress-key"
+  default     = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCn0qTqOnzxbJ0eKcnT6m2QpX6th4tJXItpb+VbLOumJau2w2QXDVGIUa3SGBSKKijwXVSWzrEMV1ucW8jlMysBdogVeIcoXPEq+XVz4X9FrkuIWEOSeBQuZ/C1fgt1u27O5R4Y+8SNtK+sLoQBcgt8ycQKsubpSn0oFgklqCJcQbldOId+hfwIdtGs6zehcgOQWuXaHrHJVk4pVU4wJ0mpZ+0fYuk0BPGdmA3FUvzjV2mwp9bwBR4cnMcvOIk4yV3ovVE2dA+QXbd4smgUrYPk3nvqxuOTyieh+q6pbVcGcp5iVLC4UvxZmPqAH2FQ3pAe3mN8qIPNvd5/fmskMjMZ wordpress-key"
 }
 
