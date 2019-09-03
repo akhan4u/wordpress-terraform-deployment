@@ -14,13 +14,13 @@ Terraform v0.11.13
 Uses terraform to deploy wordpress on EC2 instance with AWS RDS.
 
 Following resources are created :
-1. AWS VPC
-2. AWS Subnet for VPC
-3. AWS Internet Gateway
-4. Route table entry and associations
+1. AWS VPC.
+2. AWS Subnet for VPC.
+3. AWS Internet Gateway.
+4. Route table entry and associations.
 5. Security Group exposing Port 22, 80 & 3306.
 6. A RDS instance created with database for WordPress.
-7. An AWS EC2 Instance 
+7. An AWS EC2 Instance.
 8. Remote provisioner to download, install and configure wordpress docker container after EC2 deployment. 
 
 ## Running it Manually
@@ -42,4 +42,4 @@ After Complete Run it will Output the PublicIP of your WordPress EC2 Instance. E
 
 ## Disclaimer!!
 
-This example deploy real resources into your AWS account which can cost you money. The resources are all part of the <b>AWS Free Tier Account</b>, you are completely responsible for all AWS charges.
+This example deploy real resources into your AWS account which can cost you money. The resources are all part of the <b>AWS Free Tier</b>, you are completely responsible for all AWS charges.
