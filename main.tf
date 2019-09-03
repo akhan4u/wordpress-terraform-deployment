@@ -132,7 +132,7 @@ resource "aws_db_instance" "default" {
   parameter_group_name    = "default.mysql5.7"
   multi_az                = false
   backup_retention_period = 10
-  deletion_protection     = false
+  deletion_protection     = true
   publicly_accessible     = true
   skip_final_snapshot     = true
   availability_zone       = "us-west-2b"
@@ -169,7 +169,7 @@ resource "aws_instance" "wp-ec2" {
   root_block_device {
     volume_size           = 8
     volume_type           = "gp2"
-    delete_on_termination = true
+    delete_on_termination = false
   }
 
   tags {
