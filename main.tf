@@ -185,7 +185,7 @@ resource "null_resource" "wordpress_deployment" {
     host        = "${aws_instance.wp-ec2.public_ip}"
     user        = "${var.ssh_user}"
     port        = "${var.ssh_port}"
-    private_key = "${file("~/.ssh/id_rsa")}"
+    private_key = "${file(".ssh/wordpress-ssh-key")}"
   }
 
   // Configure and Install wordpress on ec2 node
